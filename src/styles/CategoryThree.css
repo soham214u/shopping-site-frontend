@@ -1,0 +1,14 @@
+.category-three-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-three-div h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

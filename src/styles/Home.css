@@ -1,0 +1,32 @@
+.hero-section img {
+    width: 100%;
+}
+
+.category-div h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-div h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

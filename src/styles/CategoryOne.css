@@ -1,0 +1,14 @@
+.category-one-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-one-div h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

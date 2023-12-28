@@ -1,0 +1,35 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #092635;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.nav p {
+    font-size: 35px;
+}
+
+.navItems {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navItems li {
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.navItems li:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}

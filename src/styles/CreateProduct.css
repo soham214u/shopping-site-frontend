@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: #9EC8B9;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+    height: fit-content;
+    width: max-content;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.title, .description, .price, .img-url {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-label {
+    margin: 30px;
+    font-size: 30px;
+}
+
+#title, #description, #price, #imgUrl {
+    height: 30px;
+    width: 300px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.form button {
+    background-color: yellow;
+    margin: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px;
+}
