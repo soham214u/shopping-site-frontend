@@ -6,10 +6,11 @@ import "../styles/CreateProduct.css";
 const CreateProduct = () => {
     const {handleSubmit, register, formState: { errors },} = useForm();
 
-    const submitHandler = async ({title, description, price, imgUrl}) => {
+    const submitHandler = async ({title, description, category, price, imgUrl}) => {
         const res = await axios.post("http://localhost:4000/products", {
             title,
             description,
+            category,
             price,
             imgUrl,
         });
@@ -25,7 +26,7 @@ const CreateProduct = () => {
     <>
         <form onSubmit={handleSubmit(submitHandler)} className="form">
             <h2>Create Product</h2>
-            <div className="title">
+            <div className="create">
                 <label className="form-label">Title</label>
                 <input 
                  type="text" 
@@ -35,7 +36,7 @@ const CreateProduct = () => {
                 />
                 {errors.title && (<div>{errors.title.message}</div>)}  
             </div>
-            <div className="description">
+            <div className="create">
                 <label className="form-label">Description</label>
                 <input 
                  type="text" 
@@ -45,7 +46,17 @@ const CreateProduct = () => {
                 />
                 {errors.description && (<div>{errors.description.message}</div>)}  
             </div>
-            <div className="price">
+            <div className="create">
+                <label className="form-label">Category</label>
+                <input 
+                 type="text" 
+                 name="category" 
+                 id="category"
+                 {...register("category", {required: "Please enter product category"})} 
+                />
+                {errors.category && (<div>{errors.category.message}</div>)}  
+            </div>
+            <div className="create">
                 <label className="form-label">Price</label>
                 <input 
                  type="Number" 
@@ -55,7 +66,7 @@ const CreateProduct = () => {
                 />
                 {errors.price && (<div>{errors.price.message}</div>)}  
             </div>
-            <div className="img-url">
+            <div className="create">
                 <label className="form-label">Image URL</label>
                 <input 
                  type="text" 

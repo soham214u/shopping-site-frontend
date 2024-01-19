@@ -1,37 +1,25 @@
-main {
-    height: 100%;
-    width: 100%;
+.login-form {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.form {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #faa933;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 30px;
-    margin-left: 40%;
-    margin-right: 40%;
+    background-color: darkolivegreen;
+    color: white;
+    margin: 40px;
+    padding: 100px;
 }
 
-.create {
+.email, .password {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.form-label {
+.label-sec {
     margin: 30px;
     font-size: 30px;
 }
 
-.create input {
+.login-form input {
     height: 30px;
     width: 300px;
     align-items: center;
@@ -40,13 +28,13 @@ main {
     padding: 5px;
 }
 
-.create input:focus {
+.login-form input:focus {
     outline: none;
     border: none;
 }
 
-.form button {
-    background-color: #cc5c2a;
+.login-form button {
+    background-color: #85bf31;
     color: white;
     margin: 15px;
     padding: 15px;
@@ -57,34 +45,34 @@ main {
     font-weight: 800;
 }
 
-.form button:hover {
-    background-color: #b4440f;
+.login-form button:hover {
+    background-color: yellowgreen;
     color: white;
 }
 
-.form h2 {
-    color: white;
+.login-form h2 {
     text-align: center;
     font-size: 40px;
     margin: 15px;
 }
 
+.login-form p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.login-form p a {
+    color: aqua;
+    border-bottom: 0.5px solid;
+}
+
 @media (max-width: 600px) {
-    .create {
+    .email, .password {
         display: flex;
         flex-direction: column;
     }
 
-    .form-label {
-        margin: 20px;
-    }
-
-    .create input {
-        width: 250px;
-        margin-bottom: 10px;
-    }
-
-    .form button {
-        margin-top: 30px;
+    .login-form button {
+        margin-top: 70px;
     }
 }

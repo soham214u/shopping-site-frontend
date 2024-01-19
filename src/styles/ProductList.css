@@ -24,6 +24,20 @@
     border: none;
     margin-left: 40px;
     margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -35,9 +49,16 @@
     border: 1px solid white;
 }
 
-.all-product h2 {
+.update-btn:hover {
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+.product-list h2 {
     text-align: center;
     font-size: 40px;
-    color: royalblue;
     padding: 20px;
 }

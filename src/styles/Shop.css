@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 }
 
+.all-products li {
+    list-style: none;
+}
+
 .all-product-div h2 {
     text-align: center;
     font-size: 40px;

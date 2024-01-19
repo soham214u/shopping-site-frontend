@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../styles/CategoryCard.css";
 
-const CategoryCard = ({categoryText}) => {
+const CategoryCard = ({categoryImg, categoryText}) => {
   let categoryRoute;
 
   switch (categoryText.toLowerCase()) {
-    case "smartphones":
-      categoryRoute = "/category/smartphones";
+    case "mobiles":
+      categoryRoute = "/category/mobiles";
       break;
 
     case "headphones":
@@ -24,6 +24,9 @@ const CategoryCard = ({categoryText}) => {
 
   return (
     <div className="category-card">
+      <section>
+        <img src={categoryImg} alt="" />
+      </section>
       <Link to={categoryRoute}>
         <h4>{categoryText}</h4>
       </Link>

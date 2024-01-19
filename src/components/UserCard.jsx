@@ -1,20 +1,17 @@
 import React from 'react';
 import "../styles/UserCard.css";
 
-const UserCard = ({userImg, firstName, lastName, phone, email}) => {
+const UserCard = ({firstName, lastName, password, email}) => {
   return (
     <div className="user-card">
-        <section>
-            <img src={userImg} alt="" />
-        </section>
         <section className="user-name">
             <p>{firstName}</p>
             <p>{lastName}</p>
         </section>
-        <p>{phone}</p>
         <p>{email}</p>
+        <p>{password}</p>
     </div>
   )
 }
 
-export default UserCard
+export default UserCard;

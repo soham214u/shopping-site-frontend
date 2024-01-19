@@ -33,11 +33,14 @@ const Shop = () => {
         {
           productData.map((product) => {
             return (
-              <ProductCard
-                productImg={product.imgUrl}
-                title={product.title}
-                price={product.price}
-              />
+              <li key={product._id}>
+                <ProductCard
+                  productId={product._id}
+                  productImg={product.imgUrl}
+                  title={product.title}
+                  price={product.price}
+                />
+              </li>
             )
           })
         }

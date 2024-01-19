@@ -1,37 +1,30 @@
-main {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.form {
+.update-product {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #faa933;
-    border-radius: 10px;
-    margin: 30px;
-    padding: 30px;
+    align-items: center;
+    background-color: darkolivegreen;
+    margin: 2rem;
+    padding: 2rem;
     margin-left: 40%;
     margin-right: 40%;
+    border-radius: 10px;
 }
 
-.create {
+.update {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.form-label {
+.label {
+    color: white;
     margin: 30px;
     font-size: 30px;
+    font-weight: 700;
 }
 
-.create input {
+.update-product input {
     height: 30px;
     width: 300px;
     align-items: center;
@@ -40,13 +33,13 @@ main {
     padding: 5px;
 }
 
-.create input:focus {
+.update-product input:focus {
     outline: none;
     border: none;
 }
 
-.form button {
-    background-color: #cc5c2a;
+.update-product button {
+    background-color: #85bf31;
     color: white;
     margin: 15px;
     padding: 15px;
@@ -57,34 +50,39 @@ main {
     font-weight: 800;
 }
 
-.form button:hover {
-    background-color: #b4440f;
+.update-product button:hover {
+    background-color: yellowgreen;
     color: white;
 }
 
-.form h2 {
+.update-product h2 {
     color: white;
-    text-align: center;
     font-size: 40px;
     margin: 15px;
 }
 
 @media (max-width: 600px) {
-    .create {
+    .update-product {
+        width: 80%;
+    }
+
+    .update {
         display: flex;
         flex-direction: column;
     }
 
-    .form-label {
+    .label {
         margin: 20px;
     }
 
-    .create input {
+    .update-product input {
         width: 250px;
         margin-bottom: 10px;
     }
 
-    .form button {
+    .update-product button {
         margin-top: 30px;
     }
 }
+
+

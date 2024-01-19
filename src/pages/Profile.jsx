@@ -4,7 +4,6 @@ import "../styles/Profile.css";
 import axios from "axios";
 
 
-
 const fetchUsers = async () => {
   const res = await axios.get("http://localhost:4000/users");
 
@@ -17,7 +16,6 @@ const fetchUsers = async () => {
 
 
 const Profile = () => {
-
   const[userData, setUserData] = useState([]);
 
   const assignData = async () => {
@@ -35,11 +33,9 @@ const Profile = () => {
       {
         userData.map((user) => {
           return (
-            <UserCard 
-              userImg={user.imgUrl}
+            <UserCard
               firstName={user.firstName}
               lastName={user.lastName}
-              phone={user.phone} 
               email={user.emailId} 
             />
           )
@@ -49,4 +45,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default Profile;

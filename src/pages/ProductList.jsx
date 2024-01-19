@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import ProductCard from '../components/ProductCard';
 import axios from "axios";
-import "../styles/AllProducts.css";
+import "../styles/ProductList.css";
 
-const AllProducts = () => {
+const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -29,8 +30,8 @@ const AllProducts = () => {
   };
 
   return (
-    <div className="all-product">
-      <h2>All Products</h2>
+    <div className="product-list">
+      <h2>Product List</h2>
       <section className="box">
         <ul>
           {products.map(product => (
@@ -41,6 +42,7 @@ const AllProducts = () => {
                 price={product.price}
               />
               <button onClick={() => handleDeleteProduct(product._id)} className="btn">Delete</button>
+              <Link to={`/products/${product._id}/update`} className="update-btn">Update</Link>
             </li>
           ))}
         </ul>
@@ -49,4 +51,4 @@ const AllProducts = () => {
   );
 };
 
-export default AllProducts;
+export default ProductList;

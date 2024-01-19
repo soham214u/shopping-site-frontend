@@ -1,0 +1,23 @@
+.cart h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.cart li {
+    display: flex;
+    align-items: center;
+}
+
+.cart li button {
+    height: 40px;
+    width: 170px;
+    margin: 20px;
+    background-color: salmon;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ import "../styles/CategoryOne.css";
 import axios from "axios";
 
 const fetchProducts = async () => {
-  const res = await axios.get("http://localhost:4000/smartphones");
+  const res = await axios.get("http://localhost:4000/mobiles");
 
   const data = res.data;
 
@@ -28,7 +28,7 @@ const CategoryOne = () => {
 
   return (
     <div className="category-one-div">
-      <h2>Smartphones</h2>
+      <h2>Mobiles</h2>
       <section className="category-one-products">
         {
           productData.map((product) => {

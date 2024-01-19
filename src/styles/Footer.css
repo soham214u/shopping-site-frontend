@@ -1,12 +1,32 @@
 .footer {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 40px 50px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px;
+}
+
+.column {
+    margin-bottom: 40px;
+}
+.column h3 {
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 5px;
+}
+
+.footer-icon {
+    margin: 5px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
